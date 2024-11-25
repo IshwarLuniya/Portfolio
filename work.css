@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'herofont';
+    src: url(myfont.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.menu{
+    padding-left: 10px;
+    height: 51px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+}
+p{
+    color: rgb(251, 249, 249);
+}
+a{
+    text-decoration: none;
+    color: rgba(155, 155, 155);
+}
+a:hover{
+    text-decoration:underline solid rgb(155, 155, 155);
+}
+#home,#about,#work,#archive {
+    color: white;
+    text-decoration: none;
+}
+button{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0.003);
+}
+.menu_elements{
+    display: flex;
+}
+.m_elements{
+    padding: 11px;
+}
+.m_mode{
+    padding: 11px;
+}
+.name{
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+    font-size: 15vw;
+    font-family:'herofont'; 
+}
+.info{
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+}
+.wast_time{
+    padding: 10px;
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+    border-left: 0.05px solid rgba(186, 186, 186, 0.395);
+    border-right: 0.05px solid rgba(186, 186, 186, 0.395);
+    width: 140px;
+    margin-left: 45vw;
+}
+.info_about{
+    width: 38vw;
+    font-size: 19px;
+    margin-top: 6vh;
+    margin-left: 31vw;
+    font-weight: 100;
+    margin-bottom: 6vh;
+}
+.project{
+    display: grid;
+    height: 500px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    font-weight: 500;
+    text-align: left;
+}
+.project_items{
+    border: 0.1px solid rgba(186, 186, 186, 0.395);  
+    padding: 15px; 
+}
+.im{
+    height:175px;
+    background-image: url(animal.jpg);
+    background-size: contain;
+    transition: all 0.1s linear;
+}
+#Code24-7{
+    background-image: url(code247.png);
+    background-size: cover;
+    border-radius: 2px;
+}
+#amazon{
+    background-image: url(amazon.jpg);
+    background-size: cover;
+    border-radius: 2px;
+}
+#tictac{
+    background-image: url(tic\ tac.png);
+    background-size: cover;
+    border-radius: 2px;
+}
+#calculator{
+    background-image: url(calculator.jpg);
+    background-size: cover;
+    border-radius: 2px;
+}
+#apnacollege{
+    background-image: url(apna.png);
+    background-size: contain;
+    border-radius: 2px;
+}
+#spotify{
+    background-image: url(spotify.jpg);
+    background-size: cover;
+    border-radius: 2px;
+}
+#todo{
+    background-image: url(to-do.jpg);
+    background-size: cover;
+    border-radius: 2px;
+}
+#weather{
+    background-image: url(weather.png);
+    background-size: cover;
+    border-radius: 2px;
+}
+.im:hover{
+    transform: scale(0.975);
+}
+.domain{
+    padding-top: 10px;
+    padding-left: 4px;
+}
+.contact{
+    margin-top: 7vh;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.connect{
+    display: flex;
+}
+.social{
+    display: flex;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.con{
+    padding: 15px;
+}
