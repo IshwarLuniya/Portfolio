@@ -20,6 +20,7 @@ body{
     height: 51px;
     border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100vw;
 }
 #home,#about,#work,#archive {
     color: white;
