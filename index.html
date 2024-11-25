@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'herofont';
+            src: url(myfont.ttf);
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .menu{
+            padding-left: 10px;
+            font-weight: 500;
+            height: 51px;
+            display: flex;
+            justify-content: space-between;
+            height: 51px;
+            border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #home,#about,#work,#archive {
+            color: white;
+            text-decoration: none;
+        }
+        button{
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 0px;
+            background-color: rgba(0, 0, 0, 0.003);
+        }
+        .menu_elements{
+            display: flex;
+        }
+        .m_elements{
+            padding: 11px;
+        }
+        .m_mode{
+            padding: 11px;
+        }
+        .hero{
+            font-size: 15vw;
+            font-family:'herofont'; 
+        }
+        .name{
+            height: 230px;
+        }
+        .foot{
+            margin-top: 85px;
+            height: 100px;
+            border-top: 0.05px solid rgba(186, 186, 186, 0.395);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu_elements">
+                <div class="m_elements"><a href="###" id="home">HOME</a></div>
+                <div class="m_elements"><a href="work.html" id="work">WORK</a></div>
+                <div class="m_elements"><a href="about.html" id="about">ABOUT</a></div>
+                <div class="m_elements"><a href=" " id="archive">ARCHIVE</a></div>
+            </div>
+            <div class="m_mode">
+                <div class="mode"><button>MODE</button></div>
+            </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="name">ISHWAR LUNIYA</div>
+            <div class="name">WEB DESIGNER</div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot"></div>
+    </footer>
+    <script>
+        let b = document.querySelector("button");
+        let bod = document.querySelector("body");
+        let hom = document.getElementById("home");
+        let about = document.getElementById("about");
+        let work = document.getElementById("work");
+        let archive = document.getElementById("archive");
+
+        let mode = "dark";
+        b.addEventListener("click",() => {
+            if(mode === "dark"){
+                mode = "light";
+                bod.style.backgroundColor = "white";
+                bod.style.color = "black";
+                b.style.color ="black";
+                hom.style.color = "black";
+                about.style.color = "black";
+                work.style.color = "black";
+                archive.style.color = "black";
+            }
+            else{
+                mode = "dark";
+                bod.style.backgroundColor = "black";
+                bod.style.color = "white"
+                b.style.color = "white";
+                hom.style.color = "white";
+                about.style.color = "white";
+                work.style.color = "white";
+                archive.style.color = "white";
+            }
+            console.log(mode);
+        });
+    </script>
+</body>
+</html>
