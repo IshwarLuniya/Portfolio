@@ -3,121 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <style>
-        @font-face {
-            font-family: 'herofont';
-            src: url(myfont.ttf);
-        }
-        *{
-            padding: 0px;
-            margin: 0px;
-            text-align: center;
-        }
-        body{
-            background-color: black;
-            color: white;
-        }
-        .menu{
-            padding-left: 10px;
-            font-weight: 500;
-            height: 51px;
-            display: flex;
-            justify-content: space-between;
-            height: 51px;
-            border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        #home,#about,#work,#archive {
-            color: white;
-            text-decoration: none;
-        }
-        button{
-            color: white;
-            font-size: 1.1rem;
-            font-weight: 500;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            border: 0px;
-            background-color: rgba(0, 0, 0, 0.003);
-        }
-        .menu_elements{
-            display: flex;
-        }
-        .m_elements{
-            padding: 11px;
-        }
-        .m_mode{
-            padding: 11px;
-        }
-        .hero{
-            font-size: 15vw;
-            font-family:'herofont'; 
-        }
-        .name{
-            height: 230px;
-        }
-        .foot{
-            margin-top: 85px;
-            height: 100px;
-            border-top: 0.05px solid rgba(186, 186, 186, 0.395);
-        }
-    </style>
 </head>
 <body>
     <header>
-        <div class="menu">
-            <div class="menu_elements">
-                <div class="m_elements"><a href="###" id="home">HOME</a></div>
-                <div class="m_elements"><a href="work.html" id="work">WORK</a></div>
-                <div class="m_elements"><a href="about.html" id="about">ABOUT</a></div>
-                <div class="m_elements"><a href=" " id="archive">ARCHIVE</a></div>
+        <div class="navbar">
+            
+            <div class="nav-logo">
+                <div class="logo">
+                </div>
             </div>
-            <div class="m_mode">
-                <div class="mode"><button>MODE</button></div>
-            </div>
-    </header>
-    <main>
-        <div class="hero">
-            <div class="name">ISHWAR LUNIYA</div>
-            <div class="name">WEB DESIGNER</div>
-        </div>
-    </main>
-    <footer>
-        <div class="foot"></div>
-    </footer>
-    <script>
-        let b = document.querySelector("button");
-        let bod = document.querySelector("body");
-        let hom = document.getElementById("home");
-        let about = document.getElementById("about");
-        let work = document.getElementById("work");
-        let archive = document.getElementById("archive");
 
-        let mode = "dark";
-        b.addEventListener("click",() => {
-            if(mode === "dark"){
-                mode = "light";
-                bod.style.backgroundColor = "white";
-                bod.style.color = "black";
-                b.style.color ="black";
-                hom.style.color = "black";
-                about.style.color = "black";
-                work.style.color = "black";
-                archive.style.color = "black";
-            }
-            else{
-                mode = "dark";
-                bod.style.backgroundColor = "black";
-                bod.style.color = "white"
-                b.style.color = "white";
-                hom.style.color = "white";
-                about.style.color = "white";
-                work.style.color = "white";
-                archive.style.color = "white";
-            }
-            console.log(mode);
-        });
-    </script>
+            <div class="nav-address border">
+                <div class="addone">Deliver to</div>
+                <div class="addtwo">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" id="search">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-lang border">
+                <i class="fa-brands fa-font-awesome"></i>
+                <select>
+                    <option>EN</option>
+                </select>
+            </div>
+
+            <div class="nav-account border">
+                <div class="acc-one">
+                    <p>Hello, sing in</p>
+                </div>
+                <div class="acc-two">
+                    <p>Account & List</p>
+                </div>
+            </div>
+
+            <div class="nav-order border">
+                <div class="acc-one">
+                    <p>Returns</p>
+                </div>
+                <div class="acc-two">
+                    <p>& Order</p>
+                </div>
+            </div>
+
+            <div class="nav-cart border">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    cart
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <div class="menu-select">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="menu-option">
+                <p>Today's Deal</p>
+                <p>Customer Service</p>
+                <p>Regestry</p>
+                <p>Gift card</p>
+                <p>Sell</p>
+            </div>
+            <div class="menu-deal">
+                <p>Shot deal in Electronic</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="local">
+            You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery . <a href="####">  Click here to go to amazon.in</a>
+        </div>
+    </div>
+
+    <div class="shop">
+
+        <div class="box">
+            <div class="box-content">
+                <h1>Gifts & Toys</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img1.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-content">
+                <h1>Watchs</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img2.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h1>Kitchen Utensils</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img3.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h1>Sports</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img4.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h1>Gym Accessories</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img5.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h1>Gaming Items</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img6.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h1>Electronic Items</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img7.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h1>Health & Care</h1>
+                <div class="shop-img" style="height: 300px; background-image: url('img8.jpg'); margin-top: 1rem;margin-bottom: 1rem;"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="acc">
+            <div class="accone">
+                <div class="accou">
+                    <div class="acctwo">
+                        See personalized recommendations
+                    </div>
+                    <div class="acc-sign">
+                        sign in
+                    </div>
+                    <div class="accthree">
+                        New customer? <a> Start here.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top">
+            Back to top
+        </div>
+        <div class="about-us">
+            <div class="about">
+                <ul>
+                    <li><h3>Get to know us</h3></li>
+                    <li>Career</li>
+                    <li>Blog</li>
+                    <li>About Amazon</li>
+                    <li>Amazon device</li>
+                    <li>Amazon Science</li>
+                    <li>Invastor</li>
+                </ul>
+            </div>
+            <div class="earn">
+                <ul>
+                    <li><h3>Make Money with Us</h3></li>
+                    <li>Sell products on Amazon</li>
+                    <li>Sell on Amazon Business</li>
+                    <li>Sell apps on Amazon</li>
+                    <li>Become an Affiliate</li>
+                    <li>Advertise Your Products</li>
+                    <li>Self-Publish with Us</li>
+                    <li>Host an Amazon Hub</li>
+                </ul>
+            </div>
+            <div class="payment">
+                <ul>
+                    <li><h3>Amazon Payment Product</h3></li>
+                    <li>Amazon Payment Products</li>
+                    <li>Amazon Business Card</li>
+                    <li>Shop with Points</li>
+                    <li>Reload Your Balancev
+                    <li>Amazon Currency </li>
+                </ul>
+            </div>
+            <div class="help">
+                <ul>
+                    <li><h3>Let us Help you</h3></li>
+                    <li>Let Us Help You</li>
+                    <li>Amazon and COVID-19</li>
+                    <li>Your Account</li>
+                    <li>Your Orders</li>
+                    <li>Rates & Policies</li>
+                    <li>Replacements</li>
+                    <li>Content and Devices</li>
+                    <li>Amazon Assistant</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="detail-logo">
+            </div> 
+            <div class="detail-language">
+                <i class="fa-solid fa-globe"></i>
+                <select>
+                    <option>English</option>
+                </select>
+            </div>
+            <div class="detail-currency">
+                <i class="fa-solid fa-dollar-sign"></i>
+                USD - U.S. Doller
+            </div>
+            <div class="detail-country">
+                <i class="fa-solid fa-flag-usa"></i>
+                United States
+            </div>       
+        </div>
+        <div class="copy">
+            <i class="fa-regular fa-copyright"></i>
+            1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+    </footer>
 </body>
 </html>
