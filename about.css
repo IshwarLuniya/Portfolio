@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'herofont';
+    src: url(myfont.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.menu{
+    padding-left: 10px;
+    height: 51px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+}
+a{
+    color: rgb(137, 137, 137);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline solid rgb(138, 138, 138);
+}
+a:visited{
+    text-decoration: none;
+}
+#home,#about,#work,#archive {
+    color: white;
+    text-decoration: none;
+}
+button{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0.003);
+}
+.menu_elements{
+    display: flex;
+}
+.m_elements{
+    padding: 11px;
+}
+.m_mode{
+    padding: 11px;
+}
+.name{
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+    font-size: 15vw;
+    font-family:'herofont'; 
+}
+.wast_time{
+    padding: 10px;
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+    border-left: 0.05px solid rgba(186, 186, 186, 0.395);
+    border-right: 0.05px solid rgba(186, 186, 186, 0.395);
+    width: 140px;
+    margin-left: 45vw;
+}
+.info_about{
+    margin-top: 10vh;
+    margin-left: 27vw;
+    margin-right: 27vw;
+    height: 145vh;
+    width: 45vw;
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+}
+.my_info{
+    display: flex;
+    height: 34vh;
+}
+.my_img{
+    height: 34vh;
+    width: 30vh;
+    background-image: url(ishu_image.jpg);
+    background-size: contain;
+    border-radius: 1px;
+}
+.my_intro{
+    height: 27.2vh;
+    width: 56.5vh;
+    padding: 25px;
+}
+.my_other_info{
+    margin-top: 15px;
+}
+.my_skills{
+    margin-top: 55px;
+    height: 60vh;
+}
+h1{
+    font-family:'herofont'; 
+    font-size: 60px;
+    height: 50px;
+    margin-bottom: 5vh;
+}
+.skill{
+    height: 5vh;
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+    padding: 20px;
+    padding-left: 0px;
+}
+.contact{
+    margin-top: 7vh;
+    height: 8vh;
+    border-top: 0.05px solid rgba(186, 186, 186, 0.395);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.connect{
+    display: flex;
+}
+.social{
+    display: flex;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.con{
+    padding: 15px;
+}
