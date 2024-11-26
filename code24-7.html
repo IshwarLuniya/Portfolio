@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color:white;
+    background-image: url("logo.png");
+    background-size: 128px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    position: fixed;
+}
+select{
+    border: 0px;
+    margin-left: 35px;
+    margin-top: 20px;
+    font-weight: 900;
+    color: #190652;
+}
+input{
+    height: 28px;
+    width: 180px;
+    border: 1.5px solid rgb(22, 1, 61);
+    border-radius: 15px;
+    background-color: rgb(246, 233, 247);
+}
+button{
+    font-weight: 600;
+    color: #EEA5A6;
+}
+.body{
+    padding-top: 75px;
+    background-color:rgb(253, 253, 253);
+    word-spacing: 6px;
+    line-height: 23px;
+}
+.contnerimg{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+#img1,#img3{
+    float: right;
+}
+#img2{
+    float: left;
+}
+#img3{
+    margin-left: 30px;
+}
+#logo1{
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 180px;
+}
+.image1,.image2,.image3{
+    width: 1350px;
+    height: 550px;
+    padding-left: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.image2{
+    margin-top: 70px;
+    text-align: center;
+}
+pre{
+    font-size: 50px;
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    line-height: 65px;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 27px;
+    color: #4c1cd0;
+}
+#one{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contner{
+    height: 1100px;
+    background-color: #40026a;
+    padding-top: 40px;
+}
+#box{
+    height: 165px;
+    width: 260px;
+    background-color: #cfc4f0;
+    border: 0px;
+    border-radius: 15px; 
+    box-shadow: 7px 7px rgb(4, 4, 4);   
+}
+h1{
+    margin-left: 180px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #EEA5A6;
+}
+.webdevp,.DSA,.mlds,.tut{
+    display: flex;
+    height: 250px;
+    width: 1200px;
+    margin-left: 150px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.js{
+    background-image: url(js.png);
+    background-size: cover;
+}.angularjs{
+    background-image: url(angular.png);
+    background-size: cover;
+}.reactjs{
+    background-image: url(reactjs.png);
+    background-size: cover;
+}.nodejs{
+    background-image: url(nodejs.png);
+    background-size: cover;  
+}
+
+.array{
+    background-image: url(array.png);
+    background-size: cover;
+}.linkedlist{
+    background-image: url(linkedlist.png);
+    background-size: cover;
+}.anyalo{
+    background-image: url(analysisalgo.png);
+    background-size: cover;
+}.graph{
+    background-image: url(graph.png);
+    background-size: cover;
+}
+
+.ml{
+    background-image: url(ml.png);
+    background-size: cover;
+}.maths{
+    background-image: url(mlmaths.png);
+    background-size: cover;
+}.dspy{
+    background-image: url(dspython.png);
+    background-size: cover;
+}.dataaly{
+    background-image: url(da.png);
+    background-size: cover;
+}
+
+.python{
+    background-image: url(python.png);
+    background-size: cover;
+}.sql{
+    background-image: url(sql.png);
+    background-size: cover;
+}.git{
+    background-image: url(git.png);
+    background-size: cover;
+}.javac{
+    background-image: url(java.png);
+    background-size: cover;
+}
+
+.foot{
+    height: 340px;
+    background-color:rgb(206, 149, 244);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+a{
+    font-size: 17px;
+    letter-spacing: 1.35px;
+    text-decoration: none;
+    color: #210b66;
+}
+.company,.language,.datascience,.dsa,.webdev,.java{
+    color: #13053e;
+    list-style-type: none;
+    line-height: 28px;
+}
+b{
+    font-size: 19px;
+    color: #050303;
+    cursor: default;
+    letter-spacing: 2px;
+}
+.footer{
+    color: #EEA5A6;
+    height: 20px;
+    padding-top: 8px;
+    background-color:#1b013a;
+    text-align: center;
+    font-size: 12px;
+}
+    </style>
+</head>
+<body >
+
+
+    <header>
+        <div class="nav">
+            <select style="margin-left: 200px;">
+                <option>Cource</option>
+                <option>Cource</option>
+                <option>Cource</option>
+                <option>Cource</option>
+            </select>
+            <select>
+                <option>Tutorial</option>
+                <option>Cource</option>
+                <option>Cource</option>
+                <option>Cource</option>
+            </select>
+            <select>
+                <option>Contest</option>
+                <option>Cource</option>
+                <option>Cource</option>
+                <option>Cource</option>
+            </select>
+            <select>
+                <option>Jobs</option>
+                <option>Cource</option>
+                <option>Cource</option>
+                <option>Cource</option>
+            </select>
+                <input style="margin-left: 500px;" id="search" type="text" name="Search" placeholder="     Search...">
+                <button type="submit" style="margin-left: -34.25px;border: 0px; height: 28px;width: 29px;
+                 border-radius: 50%; background-color:rgb(243, 178, 247) ;color:#000;" class="a">GO</button>
+                <button id="buttonone" type="submit" style="margin-left: 30px;border: 0px;height: 42.5px;
+                border-radius: 5px;width: 83px; background-color: rgb(22, 1, 61); transition: all;
+                transition-duration: 1s;" class="b">
+                    <a style="text-decoration: none; color:#EEA5A6;" href="Form.html">Sign-in</a>
+                </button>
+        </div>  
+    </header>
+
+
+
+    <main>
+        <div class="body">
+
+            <div class="contnerimg"><br>
+
+                <div class="image1">
+                    <img id="img1" src="logo1.png" alt="image1" height="700px">
+                    <br><br><br>
+                    <img id="logo1" src="logo.png" height="200px">
+                    <br><br>
+                    <pre style="line-height: 40px;font-size: 40px; font-weight: 700;color: #280233;">               WELCOM TO</pre>
+                    <pre style="line-height: 40px;font-size: 40px; font-weight: 700;color: #280233;">               LEARN 24-7</pre>
+                    <br><br>
+                    <pre style="font-size: 25px;color: #324aa1;">      “If learning material is designed to be highly 
+      relevant and delivered in context, then it is 
+                    likely to be useful.”</pre>
+                    <br><br><br><br>
+                    <button style="margin-left: 180px; border: 0px;height: 45px;border-radius: 25px;width: 380px; background-color: rgb(233, 46, 146);"><a style="text-decoration: none;color: white;font-weight: 900; font-size: 20px;" href="###"> UNLOCK YOUR SUCESS </a></button>
+                    <br>
+                </div><br><br><br><br>
+
+                <div style="height: 80px; width: 1350px;">
+                </div>
+
+                <div class="image2">
+                    <img id="img2" src="logo2.png" alt="image2" height="500px">
+                    <H2 style="text-align: left;color: #340341;">Idea Of Innovations</H2>
+                    <br>
+                    <p id="one">
+                    Innovation and creativity are fundamental to all academic disciplines and educational 
+                    activities, not just the arts.  Innovation contains the idea of output, of 
+                    actually producing or doing something differently, making something happen or 
+                    implementing something new. 
+                    <br><br>
+                    Innovation almost always involves hard work; persistence and perseverance are 
+                    necessary as many good ideas never get followed through and developed. Creative 
+                    Thinking is the key to unlocking innovative solutions and fostering imagination. 
+                    <br><br>
+                    This blog covers the essence of Creative Thinking, highlighting its significance 
+                    in problem-solving and idea generation.
+                    <br><br>
+                    The concept of innovation emerged after the Second World War, mostly thanks to the
+                    works of Joseph Schumpeter (1883–1950) who described the economic effects of 
+                    innovation processes as Constructive destruction. Today, consistent neo-Schumpeterian 
+                    scholars see innovation not as neutral or apolitical processes.[15][16] Rather, 
+                    innovation can be seen as socially constructed processes. Therefore, it is in conception 
+                    depends on the political and societal context of the inovation.
+                    <br>
+                    According to Shannon Walsh, "innovation today is best understood as innovation under 
+                    capital" (p. 346).[18] This means that the current hegemonic purpose for innovation 
+                    is capital valorisation and profit maximization, for the exemplified by the appropriation of a
+                    knowledge.
+                    </p>
+                </div><br>
+
+                <div class="image3" style="margin-top: 100px;">
+                    <img id="img3" src="logo3.png" alt="image3" height="500px">
+                    <H2 style="color: #340341;">Security And Analysis</H2>
+                    <br>
+                    <p style="text-align: justify; color: #fd0d8d;">
+                    Information Security is not only about securing information from unauthorized access. 
+                    Information Security is basically the practice of preventing unauthorized access, use, 
+                    disclosure, disruption, modification, inspection, recording or destruction of information. 
+                    Information can be a physical or electronic one. Information can be anything like Your 
+                    details or we can say your profile on social media, your data on mobile phone, your 
+                    biometrics etc.
+                    <br><br>
+                    “To grow your business even to grow in your life, sometimes all you need to do is 
+                    Analysis!” If your business is not growing, then you have to look back recognize 
+                    your mistakes, and make a plan again without repeating those mistakes. And even if 
+                    your business is growing, then you have to look forward to making business 
+                    grow more.
+                    <br><br>
+                    In order to depict economic decisions mathematically, economists needed to assume 
+                    that human behavior is both rational and predictable. They imagined a representative 
+                    human, Homo economicus, endowed with consistent preferences, stable moods, and an 
+                    enviable ability to make only rational decisions. This sleight of hand yielded some 
+                    theories that had genuine predictive value, but economists were obliged to exclude 
+                    from their analyses many phenomena that didn't fit the … framework, such as 
+                    stock-market bubbles, drug is a addiction,endowed with a consistent preferences and for
+                    compulsive shopping.
+
+                    </p>
+                </div><br>
+
+            </div>
+
+
+            <div class="contner">
+
+                <h1 style="color: rgb(253, 167, 18);">Web-Development</h1>
+                <div class="webdevp">
+                    <a href="https://www.geeksforgeeks.org/javascript/?ref=home-articlecards">
+                    <div id="box" class="js"></div>
+                    </a>
+                    <div id="box" class="reactjs"></div>
+                    <div id="box" class="nodejs"></div>
+                    <div id="box" class="angularjs"></div>
+                </div>
+
+                <h1 style="color: rgb(54, 178, 223);">Data Stracture</h1>
+                <div class="DSA">
+                    <div id="box" class="array"></div>
+                    <div id="box" class="anyalo"></div>
+                    <div id="box" class="linkedlist"></div>
+                    <div id="box" class="graph"></div>
+                </div>
+
+                <h1 style="color: rgba(172, 159, 252, 0.991);">Mechine Learning</h1>
+                <div class="mlds">
+                    <div id="box" class="ml"></div>
+                    <div id="box" class="maths"></div>
+                    <div id="box" class="dataaly"></div>
+                    <div id="box" class="dspy"></div>
+                </div>
+
+                <h1 style="color: rgba(114, 220, 114, 0.932);">Languages</h1>
+                <div class="tut" style="margin-bottom: 100px;">
+                    <div id="box" class="python"></div>
+                    <div id="box" class="sql"></div>
+                    <div id="box" class="git"></div>
+                    <div id="box" class="javac"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="foot">
+
+            <div class="company">
+                <li id="company">
+                    <ul><b>Company</b></ul>
+                    <br>
+                    <ul><a href="###">About Us</a></ul>
+                    <ul><a href="###">Contact Us</a></ul>
+                    <ul><a href="###">Carrer</a></ul>
+                    <ul><a href="###">Legal</a></ul>
+                    <ul><a href="###">Program</a></ul>
+                    <ul><a href="###">Jobs</a></ul>
+                    <ul><a href="###">Software</a></ul>
+                </li>
+            </div>
+
+            <div class="language">
+                <li id="language">
+                    <ul><b>Language</b></ul>
+                    <br>
+                    <ul><a href="###">Java</a></ul>
+                    <ul><a href="###">Python</a></ul>
+                    <ul><a href="###">PHP</a></ul>
+                    <ul><a href="###">C</a></ul>
+                    <ul><a href="###">C++</a></ul>
+                    <ul><a href="###">SQL</a></ul>
+                    <ul><a href="###">C#</a></ul>
+                </li>
+            </div>
+
+            <div class="datascience">
+                <li id="datascience">
+                    <ul><b>DS by Python</b></ul>
+                    <br>
+                    <ul><a href="###">Data Science</a></ul>
+                    <ul><a href="###">DS by Java</a></ul>
+                    <ul><a href="###">ML</a></ul>
+                    <ul><a href="###">Data Analytic</a></ul>
+                    <ul><a href="###">Maths</a></ul>
+                    <ul><a href="###">Panda</a></ul>
+                    <ul><a href="###">Algo</a></ul>
+                </li>
+            </div>
+
+            <div class="webdev">
+                <li id="webdev">
+                    <ul><b>HTML CSS</b></ul>
+                    <br>
+                    <ul><a href="###">Java Script</a></ul>
+                    <ul><a href="###">React</a></ul>
+                    <ul><a href="###">Angular</a></ul>
+                    <ul><a href="###">Node JS</a></ul>
+                    <ul><a href="###">Git</a></ul>
+                    <ul><a href="###">GitHub</a></ul>
+                    <ul><a href="###">Potfolio</a></ul>
+                </li>
+            </div>
+
+            <div class="dsa">
+                <li id="dsa">
+                    <ul><b>DSA</b></ul>
+                    <br>
+                    <ul><a href="###">Algorithms</a></ul>
+                    <ul><a href="###">Stack</a></ul>
+                    <ul><a href="###">Linked List</a></ul>
+                    <ul><a href="###">DSA By Java</a></ul>
+                    <ul><a href="###">Programs</a></ul>
+                    <ul><a href="###">Hash</a></ul>
+                    <ul><a href="###">Tree</a></ul>
+                </li>
+            </div>
+
+            <div class="java">
+                <li id="java">
+                    <ul><b>JAVA</b></ul>
+                    <br>
+                    <ul><a href="###">OOP's</a></ul>
+                    <ul><a href="###">MultiThreading</a></ul>
+                    <ul><a href="###">Interface</a></ul>
+                    <ul><a href="###">Abstraction</a></ul>
+                    <ul><a href="###">AWT</a></ul>
+                    <ul><a href="###">Event</a></ul>
+                    <ul><a href="###">JDBC</a></ul>
+                </li>
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            &copy; Copyrigth, All rights reserved. LEARN 24-7
+        </div>
+    </footer>
+
+</body>
+</html>
