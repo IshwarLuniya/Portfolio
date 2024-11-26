@@ -35,6 +35,7 @@ button{
 }
 .menu_elements{
     display: flex;
+    width: 60px;
 }
 .m_elements{
     padding: 11px;
