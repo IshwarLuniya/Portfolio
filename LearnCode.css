@@ -1,0 +1,25 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(181, 180, 180);
+}
+.nav{
+    height: 50px;
+    background-color: rgb(243, 241, 241);
+
+}
+input{
+    height: 20px;
+    width: 100px;
+    border: .7px solid black;
+    border-radius: 15px;
+}
+select{
+    border: 0px;
+    padding-top: 15px;
+    padding-left: 35px;
+    
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="one">
+        <h2 style="font-size: 30px;">SIGN UP</h2>
+            <div class="two">    
+                <form action="action.php">
+                    <div class="contaner1">
+                        <div class="f1">
+                            <label for="first_name">First Name</label><br>
+                            <input id="first_name" type="text" name="first_name" placeholder="Enter first name">
+                        </div>
+                        <div class="f2">
+                            <label for="last_name">Last Name</label><br>
+                            <input id="last_name" type="text" name="last_name" placeholder="Enter last name">
+                        </div>
+                    </div>
+                    <div class="contaner2">
+                        <div class="f3">
+                            <label for="Name">Email Address</label><br>
+                            <input id="Email" type="email" name="Email" placeholder="Enter Email">
+                        </div>
+                        <div class="f4">
+                            <label for="Cource">Cource</label><br>
+                            <select id="Cource">
+                                <option value="Software_Developer" name="Cource">Software Developer</option>
+                                <option value="Web_Developer" name="Cource">Web Developer</option>
+                                <option value="App_Dveloper" name="Cource">App Developer</option>
+                                <option value="Data_Analytic" name="Cource">Data Analytic</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contaner3">
+                        <label for="about">Enter About Your </label><br>
+                        <textarea id="about" name="about" placeholder="Enter About You Self"></textarea>
+                    </div>
+                    <div class="contaner4">
+                        <div class="f5">
+                            <label for="Password">Enter Password</label><br>
+                            <input id="Password" type="password" name="Password" placeholder="Enter Password">
+                        </div>
+                        <div class="f6">
+                            <label for="Password">Confirm Password</label><br>
+                            <input id="Password" type="password" name="Password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <div class="contaner5">
+                        <div class="f7">
+                            <label for="date_of_birth">Date of Birth</label><br>
+                            <input id="date_of_birth" type="date" name="date_of_birth" placeholder="Enter date of birth">
+                        </div>
+                        <div class="f8">
+                            <label for="cv">Uplode Your CV</label><br>
+                            <input id="cv" type="file" name="cv" placeholder="form.pdf" id="cv">
+                        </div>
+                    </div>
+                    <div class="contaner6">
+                        <div class="f9">
+                            <button type="submit">Sign-in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
