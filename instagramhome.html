@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background: linear-gradient(155deg,#16013e,#720290,#d802c3,#f20372,#fe030b,#f2aa03);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 39rem;
+            font-family:Arial, sans-serif;
+        }
+        .contaner{
+            margin-top: 1rem;
+            height: 33.5rem;
+            width: 50rem;
+            background-color: white;
+            border: 0.75rem rgb(7, 11, 34) solid;
+            border-radius: 2.5rem;
+        }
+        .navbar{
+            height: 3.5rem;
+            border-bottom: 1.5px solid rgb(174, 174, 174);
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 700;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .instagram{
+            margin-right: 26rem;
+        }
+        .log{
+            margin-left: 2.5rem;
+        }
+        .storys{
+            height: 5rem;
+            border-bottom: 1.5px solid rgb(174, 174, 174);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .yourstory{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            background-image: url(Screenshot\ 2024-08-07\ 151252.png);
+            background-size: contain;
+        }
+        .plus{
+            height: 1rem;
+            width: 1rem;
+            font-size: 1.05em;
+            border-radius: 50%;
+            background-color: white;
+            position: fixed;
+            z-index: 1;
+            top: 9.6rem;
+            left: 16.2rem;
+        }
+        .story{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            background: linear-gradient(155deg,#b602de,#f20396,#fc020f,#fe7c03,#e1ff02);
+        }
+        .inner{
+            height: 3.6rem;
+            width: 3.6rem;
+            margin-left: 0.15rem;
+            margin-top: 0.12rem;
+            border-radius: 50%;
+            background-image: url(lord.png);
+            background-size: contain;
+            border: 0.1rem solid white;
+        }
+        .posts{
+            height: 21.5rem;
+            border-bottom: 1.5px solid rgb(174, 174, 174);
+            display: flex;
+            justify-content: center;
+        }
+        .post{
+            height: 21.5rem;
+            width: 35rem;
+            border-left:1.25px solid rgb(213, 211, 211) ;
+            border-right: 1.25px solid rgb(213, 211, 211);
+        }
+        .postinfo{
+            height: 3rem;
+            border-bottom: 1.25px solid rgb(213, 211, 211);
+            display: flex;
+            align-items: center;
+        }
+        .postphoto{
+            margin-left: 1rem;
+            height: 2.7rem;
+            width: 2.65rem;
+            border-radius: 50%;
+            border: 1.5px solid rgb(207, 206, 206);
+            background-image: url(Screenshot\ 2024-08-07\ 151252.png);
+            background-size: contain;
+        }
+        .postname{
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+            height: 2.7rem;
+            width: 24rem;
+        }
+        .name{
+            font-weight: 700;
+        }
+        .location{
+            font-size: 0.8rem;
+            color: #4a4a4a;
+        }
+        .postmore{
+            margin-left: 1rem;
+            height: 2.7rem;
+            width: 4.75rem;
+            text-align: right;
+            padding-top: 0px;
+            font-size: 3rem;
+            position: fixed;
+            z-index: 1;
+            top: 10rem;
+            left: 48.2rem;
+        }
+        .photo{
+            height: 18.5rem;
+            background-image: url(photo.png);
+            background-size: cover;
+        }
+        .menu{
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 2rem;
+        }
+        .logo{
+            height: 2.6rem;
+            width: 2.6rem;
+        }
+        .img{
+            height: 2.6rem;
+            width: 2.6rem;
+            border-radius: 50%;
+            background-image: url(Screenshot\ 2024-08-07\ 151252.png);
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+
+        <div class="navbar">
+            <div class="instagram">Instagram</div>
+            <div class="log"><i class="fa-regular fa-square-plus" style="color: #000"></i></div>
+            <div class="log"><i class="fa-regular fa-heart" style="color: #000"></i></div>
+        </div>
+
+        <div class="storys">
+            <div class="yourstory"></div>
+            <div class="plus"><i class="fa-solid fa-circle-plus" style="color: rgb(0, 136, 255);"></i></div>
+            <div class="story"><div class="inner"></div></div><div class="story"><div class="inner"></div></div>
+            <div class="story"><div class="inner"></div></div><div class="story"><div class="inner"></div></div>
+            <div class="story"><div class="inner"></div></div><div class="story"><div class="inner"></div></div>
+            <div class="story"><div class="inner"></div></div><div class="story"><div class="inner"></div></div>
+        </div>
+
+        <div class="posts">
+            <div class="post">
+                <div class="postinfo">
+                    <div class="postphoto"></div>
+                    <div class="postname">
+                        <div class="name">sharadha_khapra</div>
+                        <div class="location">Mumbai</div>
+                    </div>
+                    <div class="postmore">...</div>
+                </div>
+                <div class="photo"></div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="####"><div class="logo"><i class="fa-solid fa-house" style="color: #000"></i></div></a>
+            <div class="logo"><i class="fa-solid fa-magnifying-glass" style="color: #000"></i></div>
+            <div class="logo"><i class="fa-solid fa-clapperboard" style="color: #000"></i></div>
+            <a href="instagrammessage.html"><div class="logo"><i class="fa-regular fa-paper-plane" style="color: #000"></i></div></a>
+            <a href="instaProfileApnaCollege.html"><div class="img"></div></a>
+        </div>
+
+    </div>
+</body>
+</html>

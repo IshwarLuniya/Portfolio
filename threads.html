@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 52.5rem;
+            font-family:Arial, sans-serif;
+        }
+        .contaner{
+            height: 43.5rem;
+            width: 21.5rem;
+            background-color: black;
+            border: 0.35rem solid rgb(231, 229, 229);
+            border-radius: 3.5rem;
+        }
+        .volumeup{
+            height: 4rem;
+            width: 0.6rem;
+            background-color: rgb(231, 229, 229);
+            border-radius: 1rem;
+            position:fixed;
+            z-index: 1;
+            top: 12.5rem;
+            left: 25.46rem;
+        }
+        .volumedown{
+            height: 4rem;
+            width: 0.6rem;
+            background-color: rgb(231, 229, 229);
+            border-radius: 1rem;
+            position: fixed;
+            z-index: 1;
+            top: 17rem;
+            left: 25.46rem;
+        }
+        .power{
+            height: 6rem;
+            width: 0.6rem;
+            background-color: rgb(231, 229, 229);
+            border-radius: 1rem;
+            position: fixed;
+            z-index: 1;
+            top: 13.5rem;
+            left: 47.55rem;
+        }
+        .innercontaner{
+            height:41rem ;
+            width: 19.33rem;
+            margin-left: 1.1rem;
+            margin-top: 1.15rem;
+            border-radius: 2rem;
+            background-color: white;
+        }
+        .notch{
+            height: 1.5rem;
+        }
+        .innernotch{
+            height: 1.2rem;
+            width: 5rem;
+            border-radius: 1rem;
+            background-color: black;
+            position: fixed;
+            z-index: 1;
+            top: 5.75rem;
+            left: 34rem;
+        }
+        .more{
+            font-size: 1.2rem;
+            height: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            margin-left: 0.5rem;
+        }
+        .profile{
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .name{
+            margin-top: 1rem;
+            margin-left: 0.6rem;
+            height: 3.2rem;
+            width: 10rem;
+            
+        }
+        .fullname{
+            margin-top: 0.65;
+            height: 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .username{
+            height: 1rem;
+            font-size: 0.75rem;
+            color: #4d4d4d;
+        }
+        .img{
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            background-image: url(Screenshot\ 2024-08-07\ 151252.png);
+            background-size: contain;
+            margin-left: 5.3rem;
+        }
+        .bio{
+            height: 3.25rem;
+            color: rgb(35, 35, 35);
+            font-size: 0.675rem;
+            margin-left: 0.8rem;
+            margin-right: 1rem;
+            margin-top: 0.5rem;
+            letter-spacing: 0.035rem;
+        }
+        .follower{
+            height: 1.3rem;
+            display: flex;
+            align-items: center;
+        }
+        .img2{
+            margin-left: 1rem;
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+            background-image: url(lord.png);
+            background-size: contain;
+        }
+        .text{
+            margin-left: 0.5rem;
+            font-size: 0.6rem;
+            color: gray;
+        }
+        .edit{
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            font-size: 0.7rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        .editprofile,.sheareprofile{
+            height: 1.25rem;
+            width: 8.1rem;
+            border: 1px rgb(141, 142, 143) solid;
+            border-radius: 0.25rem;
+            padding-top: 0.35rem;
+        }
+        .option{
+            height: 2rem;
+            display: flex;
+            font-size: 0.8rem;
+            align-items: center;
+            text-align: center;
+            color: rgb(47, 47, 47);
+        }
+        .threads{
+            width: 9.5rem;
+            padding-top: 0.6rem;
+            height: 1.4rem;
+            font-weight: 600;
+            border-bottom: 2px solid gray;
+        }
+        .replies{
+            width: 9.5rem;
+            padding-top: 0.6rem;
+            height: 1.4rem;
+        }
+        .post{
+            height: 15rem;
+        }
+        .postprofile{
+            height: 3rem;
+            display: flex;
+            align-items: center;
+        }
+        .postimg{
+            margin-left: 1rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            background-image: url(Screenshot\ 2024-08-07\ 151252.png);
+            background-size: contain;
+        }
+        .postname{
+            margin-left: 0.5rem;
+            height: 1.65rem;
+            width: 12rem;
+        }
+        .postinfo{
+            margin-left: 0.75rem;
+            height: 3rem;
+            font-size: 1rem;
+            width: 3rem;
+            text-align: end;
+        }
+        .postis{
+            height: 13rem;
+        }
+        .posttext{
+            margin-left: 2rem;
+            margin-right: 2rem;
+            font-size: 0.7rem;
+            margin-top: 0.5rem;
+            height: auto;
+        }
+        .postbox{
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            height: 14.5rem;
+            width: 15.5rem;
+            background-color: rgb(240, 240, 240);
+            border-radius: 0.25rem;
+            border: 0.5px solid rgb(223, 221, 221);
+        }
+        .upper{
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+            border-radius: 0.2rem;
+            height: 2rem;
+            width: 14.5rem;
+            background-color: rgb(188, 184, 200);
+        }
+        .lower{
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+            border-radius: 0.2rem;
+            height: 8rem;
+            width: 14.5rem;
+            background-color: rgb(188, 184, 200);
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <div class="innercontaner">
+
+            <div class="notch">
+                <div class="innernotch"></div>
+            </div>
+
+            <div class="more">
+                <div class="logo"><i class="fa-solid fa-globe"></i></div>
+                <div class="logo" style="margin-left: 14rem;"><i class="fa-solid fa-hashtag"></i></div>
+                <div class="logo"><i class="fa-solid fa-lines-leaning"></i></div>
+            </div>
+
+            <div class="profile">
+                <div class="name">
+                    <div class="fullname">Sharadha Khapra</div>
+                    <div class="username">sharadha_khapra thread.net</div>
+                </div>
+                <div class="img"></div>
+            </div>
+
+            <div class="bio">Co-Founder of Apna College - studying creators, Ex-microsoft, tedx speaker, Google SPS'20.
+            Helping you
+            </div>
+
+            <div class="follower">
+                <div class="img2"></div>
+                <div class="text">2,502 followers - ApnaCollege.com</div>
+            </div>
+
+            <div class="edit">
+                <div class="editprofile">Edit Profile</div>
+                <div class="sheareprofile">Share Profile</div>
+            </div>
+
+            <div class="option">
+                <div class="threads">Threads</div>
+                <div class="replies">Replies</div>
+            </div>
+
+            <div class="post">
+                <div class="postprofile">
+                    <div class="postimg"></div>
+                    <div class="postname">
+                        <div style="font-size: 0.7rem;">sharadha_khapra</div>
+                        <div style="font-size: 0.55rem; margin-top: 0.15rem; color: #3f3e3e;">I waited a weak to get wifi at the new house.</div>
+                    </div>
+                    <div class="postinfo" >...</div>
+                </div>
+                <div class="postis">
+                    <div class="posttext">Yesterday it get installed - lightning fast.</div>
+                    <div class="posttext" style="margin-top: 1rem;">This morning i weak up and we'ra in a power outage</div>
+                    <div class="postbox">
+                        <div class="upper"></div>
+                        <div class="lower"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="volumeup"></div>
+    <div class="volumedown"></div>
+    <div class="power"></div>
+</body>
+</html>

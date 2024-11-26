@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messanger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background: linear-gradient(90deg,#0e0218,#f6020a,#35054b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+        }
+        .contner{
+            margin-top: 2.5rem;
+            height: 29rem;
+            width: 50rem;
+            background-color: white;
+            border: 0.75rem rgb(7, 11, 34) solid;
+            border-radius: 2.5rem;
+        }
+        .menu{
+            height:4.5rem ;
+            display: flex;
+            align-items: center;
+            padding-right: 2rem;
+            padding-left: 1rem;
+            border-bottom: 1px solid rgb(174, 174, 174);
+        }
+        .logo{
+            height: 4rem;
+            width: 4rem;
+            margin-left: 2rem;
+        }
+        .profile{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            background-image: url(Screenshot\ 2024-08-07\ 151252.png);
+            background-size: contain;
+            margin-left: 1.5rem;
+        }
+        .bio{
+            height: 4rem;
+            width: 21rem;
+            margin-top: 1.2rem;
+            margin-left: 1rem;
+        }
+        .chat{
+            height: 19.5rem;
+            background-image: url(synth-sunset-lake-162023.png);
+            background-size: cover;
+            display: flex;
+            align-items:end;
+            justify-content: right;
+            justify-self: right;
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+            overflow:auto;
+        }
+        .chats{
+            margin-right: 1.35rem;
+            margin-top: 1.35rem;
+            margin-bottom: 1.35rem;
+            visibility: hidden;
+            
+        }
+        .message{
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid rgb(174, 174, 174);
+        }
+        .inner{
+            height: 4rem;
+            width: 47.9rem;
+            border-radius: 4rem;
+            background-color: rgba(196, 195, 195, 0.759);
+            display: flex;
+            align-items: center;
+        }
+        .form{
+            display: flex;
+            width: 30rem;
+        }
+        .photo{
+            margin-left: 0.45rem;
+            height: 3.45rem;
+            width: 3.5rem;
+        }
+        .send{
+            margin-left: 1rem;
+            height: 3.5rem;
+        }
+        input{
+            height: 3.5rem;
+            width: 24rem;
+            border: 0px;
+            background-color: rgba(196, 195, 195, 0.927);
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            padding-left: 0.5rem;
+            font-size: 1.5rem;
+            color: rgb(47, 47, 47);
+        }
+        input:focus{
+            outline: none;
+        }
+        #button{
+            border: 0px;
+            background-color: rgba(196, 195, 195, 0.927);
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            border-left: 1px solid rgb(173, 173, 173);
+        }
+        #sendmessage{
+            font-size: 2.5rem;
+            margin: 0.5rem 0rem 0.5rem 0.9rem;
+            padding-right: 1.3rem;
+        }
+        .log{
+            margin-left: 1rem;
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+        i{
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="contner">
+
+        <div class="menu">
+            <div class="logo" style="margin-left: 1rem;"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="profile"></div>
+            <div class="bio">
+                <div><h3>Sharadha Khapra</h3></div>
+                <p style="color: rgb(85, 84, 84);">sharadha_khapra</p>
+            </div>
+            <div class="logo"><i class="fa-solid fa-phone"></i></div>
+            <div class="logo"><i class="fa-solid fa-video"></i></div>
+        </div>
+
+        <div class="chat">
+            <div class="chats" id="sent">
+                
+            </div>
+        </div>
+        
+        <div class="message">
+            <div class="inner">
+                <div class="photo"><i class="fa-solid fa-camera" style="font-size: 2.5rem;margin-top: 0.5rem;margin-left: 0.8rem;"></i></div>
+                
+                <form id="form">
+                    <div class="form">
+                    <div class="send">
+                        <input type="text" name="message" id="message" placeholder="Message...">
+                    </div>
+                    <div>
+                        <button id="button" name="button">
+                        <i class="fa-regular fa-paper-plane" id="sendmessage"></i></button>
+                    </div>
+                    </div>
+                </form>
+
+                <div class="log">
+                    <i class="fa-regular fa-image" style="font-size: 2.25rem;margin-top: 0.5rem;margin-left: 0.8rem;"></i>
+                </div>
+                <div class="log">
+                    <i class="fa-solid fa-icons" style="font-size: 2.25rem;margin-top: 0.5rem;margin-left: 0.7rem;"></i>
+                </div>
+                <div class="photo">
+                    <i class="fa-solid fa-circle-plus" style="font-size: 3rem;margin-top: 0.3rem;margin-left: 1rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+        });
+
+        let mess = document.getElementById("sent");
+        let but = document.getElementById("button");
+        let input = document.getElementById("message");
+
+        but.addEventListener("click",() =>{
+            let message = document.createElement("div");
+            message.style.visibility = "visible";
+            message.style.backgroundColor = "rgba(219, 217, 217, 0.538)";
+            message.style.padding = "0.25rem 1rem 0.25rem 1rem";
+            message.style.color = "white";
+            message.style.fontSize = "1rem";
+            message.style.borderRadius = "0.4rem";
+            message.style.marginTop = "0.2rem";
+            message.style.width = "min-content";
+            message.innerText = input.value;
+            document.getElementById("sent").append(message);
+        });
+    </script>
+</body>
+</html>
