@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <style>
+        #task{
+            height: 1.5rem;
+            width: 20rem;
+        }
+        #add_task{
+            margin-left: 1rem;
+            height: 1.9rem;
+            width: 5rem;
+            background-color: yellow;
+            border: 1px solid rgb(138, 137, 137);
+            border-radius: 2px;
+            font-weight: 700;
+        }
+        .tasks{
+            margin-top: 2rem;
+        }
+        span{
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+        button{
+            margin-left: 1.5rem;
+            height: 2rem;
+            width: 5rem;
+            border: 1px solid rgb(138, 137, 137);
+            border-radius: 2px;
+            font-weight: 700;
+            background-color: rgb(252, 60, 60);
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>To Do List</h1>
+    <div class="addTask">
+        <input id="task" type="text">
+        <input type="submit" id="add_task">
+    </div>
+    <div class="tasks">
+        <ul id="list">
+        </ul>
+    </div>
+
+    <script>
+        const task = document.getElementById("task"); 
+        const add = document.getElementById("add_task");
+        const list = document.getElementById("list");
+
+        add.addEventListener("click", (e) => {
+            const li = document.createElement("li");
+            li.innerHTML = `
+                ${task.value}
+                <button onclick="removeTask(this)">Remove</button>
+                <hr>
+            `;
+
+            list.appendChild(li);
+            task.value = ''; // Clear input field
+        });
+        
+        function removeTask(button) {
+            const li = button.parentElement;
+            li.remove();
+        }
+        
+    </script>
+</body>
+</html>
