@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'herofont';
+    src: url(myfont.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.menu{
+    padding-left: 10px;
+    font-weight: 500;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+    border-bottom: 0.05px solid rgba(186, 186, 186, 0.395);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#home,#about,#work,#archive {
+    color: white;
+    text-decoration: none;
+}
+button{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0.003);
+}
+.menu_elements{
+    display: flex;
+}
+.m_elements{
+    padding: 11px;
+    width: 65px;
+}
+.m_mode{
+    padding: 11px;
+}
+.hero{
+    font-size: 15vw;
+    font-family:'herofont'; 
+}
+.name{
+    height: 230px;
+}
+.foot{
+    margin-top: 85px;
+    height: 100px;
+    border-top: 0.05px solid rgba(186, 186, 186, 0.395);
+}
